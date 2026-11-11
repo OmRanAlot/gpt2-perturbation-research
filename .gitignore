@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Experiment outputs: big .npz files. Keep the folder, commit plots selectively.
+results/*
+!results/.gitkeep
+logs/
+# figures/ is NOT ignored: finished, named plots are meant to be committed/shared.
+
+.cursor/
+.claude/
+.vscode/

@@ -1,0 +1,11 @@
+# Python 3.11 (pinned in .python-version; uv picks it up automatically).
+#
+# torch: PyPI gives the CPU build on Windows, which is fine for gpt2-small.
+#   For a GPU build, install torch first from https://pytorch.org/get-started/locally/
+# transformer_lens: pinned <4 because 4.0 REMOVED HookedTransformer, which this code uses.
+#   3.x needs torch >= 2.6.
+torch>=2.6
+transformer_lens>=3.0,<4
+numpy
+matplotlib
+pytest
